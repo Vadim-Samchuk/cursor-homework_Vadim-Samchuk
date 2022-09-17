@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Git commands</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<div class="config-global row">
+				<h2 class="config-global__title title">Початкове налаштування</h2>
+
+				<ul class="config-global__items items">
+					<li class="config-global__item item">
+						<span class="config-global__name name">$git config --global user.name "FIRST_NAME LAST_NAME":</span>
+						<span class="config-global__text text">- Встановлює глобальну конфігурацію імені користувача.</span>
+					</li>
+					<li class="config-global__item item">
+						<span class="config-global__name name">$git config --global user.email "MY_NAME@example.com":</span>
+						<span class="config-global__text text">- Встановлює глобальну конфігурацію адресу електронної пошти користувача.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="creating-repository row">
+				<h2 class="creating-repository__title title">Створення репозиторію</h2>
+			
+				<ul class="creating-repository__items items">
+					<li class="creating-repository__item item">
+						<span class="creating-repository__name name">$git init:</span>
+						<span class="creating-repository__text text">- Ця команда створює в поточному каталозі новий підкаталог з ім'ям .git, що містить всі необхідні файли репозиторію -
+						структуру Git репозиторію.</span>
+					</li>
+					<li class="creating-repository__item item">
+						<span class="creating-repository__name name">$git clone:</span>
+						<span class="creating-repository__text text">- Це утиліта командного рядка Git для вибору існуючого репозиторію та створення його клону, тобто копії.</span>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="making-changes row">
+				<h2 class="making-changes__title title">Внесення змін</h2>
+			
+				<ul class="making-changes__items items">
+					<li class="making-changes__item item">
+						<span class="making-changes__name name">$git status:</span>
+						<span class="making-changes__text text">- Команда <em>git status</em> показує стан файлів у робочому каталозі та індексі: які файли змінені, але не додані в індекс; які
+						очікують на комміт в індексі. На додаток до цього виводяться підказки про те, як змінити стан файлів.</span>
+					</li>
+					<li class="making-changes__item item">
+						<span class="making-changes__name name">$git add:</span>
+						<span class="making-changes__text text">- Команда <em>git add</em> приймає шлях файлу або директорії. Якщо це директорія, команда додає усі файли в цій директорії
+						рекурсивно.</span>
+					</li>
+					<li class="making-changes__item item">
+						<span class="making-changes__name name">$git commit:</span>
+						<span class="making-changes__text text">- Команда <em>git commit</em> робить для проекту знімок поточного стану змін, доданих до розділу проіндексованих файлів. Такі
+						підтверджені знімки стану можна розглядати як «безпечні» версії проекту — Git не змінюватиме їх, поки ви явно не
+						попросите про це. Перед виконанням команди <em>git commit</em> необхідно використати команду git add, щоб додати до проекту
+						(«проіндексувати») зміни, які будуть збережені у коміті. Ці дві команди, <em>git commit</em> та <em>git commit</em>, використовуються
+						найчастіше.</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="teamwork row">
+				<h2 class="teamwork__title title">Колективна робота</h2>
+			
+				<ul class="teamwork__items items">
+					<li class="teamwork__item item">
+						<span class="teamwork__name name">$git branch:</span>
+						<span class="teamwork__text text">- Команда <em>git branch</em> дозволяє створювати, переглядати, перейменовувати та видаляти гілки. Вона не дозволяє перемикатися
+						між гілками або виконувати злиття розгалуженої історії. Саме тому команда <em>git branch</em> тісно пов'язана з командами <em>git
+						checkout</em> та <em>git merge</em>.</span>
+					</li>
+					<li class="teamwork__item item">
+						<span class="teamwork__name name">$git merge:</span>
+						<span class="teamwork__text text">- Злиття використовується в Git, щоб зібрати воєдино розгалужену історію. Команда <em>git merge</em> виконує злиття окремих
+						напрямів розробки, створених за допомогою команди <em>git branch</em> у єдину гілку.</span>
+					</li>
+					<li class="teamwork__item item">
+						<span class="teamwork__name name">$git checkout:</span>
+						<span class="teamwork__text text">- Команда <em>git checkout</em> дозволяє переміщатися між гілками, створеними командою <em>git branch</em>. При перемиканні гілки
+						відбувається оновлення файлів у робочому каталозі відповідно до версії, що зберігається в цій гілці, а Git починає
+						записувати нові комміти у цій гілці.</span>
+					</li>
+				</ul>
+			</div>
+
+
+				<div class="remote-repository row">
+					<h2 class="remote-repository__title title">Робота з віддаленим репозиторієм</h2>
+				
+					<ul class="remote-repository__items items">
+						<li class="remote-repository__item item">
+							<span class="remote-repository__name name">$git push:</span>
+							<span class="remote-repository__text text">- Команда <em>git push</em> використовується для встановлення зв'язку з віддаленим репозиторієм, обчислення локальних змін
+							відсутніх у ньому, та власне їх передачі у вищезгаданий репозиторій. Цій команді потрібне право на запис у репозиторій,
+							тому вона використовує автентифікацію.</span>
+						</li>
+						<li class="remote-repository__item item">
+							<span class="remote-repository__name name">$git pull:</span>
+							<span class="remote-repository__text text">Команда <em>git pull</em> використовується для вилучення та завантаження вмісту з віддаленого репозиторію та негайного оновлення
+							локального репозиторію цим вмістом. Злиття віддалених вищих змін у локальний репозиторій - це звичайне завдання робочого
+							процесу, що виникає при спільній роботі на основі системи Git.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="view-history row">
+					<h2 class="view-history__title title">Перегляд історії</h2>
+				
+					<ul class="view-history__items items">
+						<li class="view-history__item item">
+							<span class="view-history__name name">$git log:</span>
+							<span class="view-history__text text">- За умовчанням (без аргументів) <em>git log</em> перераховує комміти, зроблені в репозиторії у зворотному до хронологічного
+							порядку - останні коміти знаходяться вгорі.</span>
+						</li>						
+					</ul>
+				</div>
+
+				<div class="ignoring-files row">
+					<h2 class="ignoring-files__title title">Ігнорування деяких файлів</h2>
+				
+					<ul class="ignoring-files__items items">
+						<li class="ignoring-files__item item">
+							<span class="ignoring-files__name name">$gitignore:</span>
+							<span class="ignoring-files__text text">- Ігнорований файл - файл, явно позначений для Git як файл, який необхідно ігнорувати.</span>
+						</li>
+					</ul>
+				</div>
+			
+		</div>
+	</div>
+</body>
+</html>

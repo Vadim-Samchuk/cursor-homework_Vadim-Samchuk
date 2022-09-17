@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@300&display=swap');
+@import 'reset.css';
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 135%;
+	
+	background-color: #2A2C36;	
+}
+
+
+.container{
+	max-width: 1180px;
+	margin: 0 auto;	
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+.wrapper{	
+	display: flex;
+	justify-content: center;	
+	align-content: center;
+	flex-wrap: wrap;
+	column-gap: 50px;
+
+	min-height: 2500px;	
+}
+
+.row{	
+	max-width: 500px;
+
+	background-color: #2E303D;
+
+	padding: 20px 0 30px 0;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.title{
+	font-size: 40px;
+	line-height: 120%;
+	text-align: center;
+
+	background-color: #D0722C;
+
+	padding: 20px 0;
+	margin-bottom: 40px;
+}
+
+.items{
+	padding: 0 30px;
+}
+
+.items li:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.item{
+	position: relative;
+
+	padding-left: 25px;
+}
+.item::before{
+	content: '';
+
+	width: 10px;
+	height: 10px;
+
+	background-color: #E85F63;
+
+	border-radius: 10px;
+
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+
+.name{
+	color: #2E303D;
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: 1px;
+	background-color: #FAFAFA;
+	padding: 0 5px;
+}
+
+.text{
+	word-spacing: 2px;
+}

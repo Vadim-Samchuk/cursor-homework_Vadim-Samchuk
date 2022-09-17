@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Avenir LT Std';
+	src: url('fonts/Avenir-LT-Std-45-Book.eot');
+	src: url('fonts/Avenir-LT-Std-45-Book.woff') format('woff'), 
+		  url('fonts/Avenir-LT-Std-45-Book.ttf') format('truetype'), 
+		  url('fonts/Avenir-LT-Std-45-Book.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+

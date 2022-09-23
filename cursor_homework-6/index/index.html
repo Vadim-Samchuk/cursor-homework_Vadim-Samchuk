@@ -5,28 +5,35 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/styles.css">      
 </head>
 <body>
    <div class="wrapper">
       <header class="header">
          <section class="header__container">
-            <div class="header__row">
-              <div class="header__menu menu">
-               <nav class="menu__nav">
-                  <div class="menu__logo">
-                     <a href="#!"><img src="../images/header/Logo.svg" alt="menu-logo"></a>
-                  </div>
+            <div id="open" class="header__row">
+              <div id="close" class="header__menu menu">
+                  <nav class="menu__nav">
+                     <div class="menu__logo">
+                        <a href="#!"><img src="../images/header/Logo.svg" alt="menu-logo"></a>
+                     </div>
 
-                  <ul class="menu__items">
-                     <li class="menu__item"><a href="#!" class="menu__link">About</a></li>
-                     <li class="menu__item"><a href="#!" class="menu__link">Help</a></li>
-                     <li class="menu__item"><a href="#!" class="menu__link">Features</a></li>
-                     <li class="menu__item"><a href="#!" class="menu__link">Signup</a></li>
-                  </ul>
-               </nav>
+                     <ul class="menu__items">
+                        <li class="menu__item"><a href="#!" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#!" class="menu__link">Help</a></li>
+                        <li class="menu__item"><a href="#!" class="menu__link">Features</a></li>
+                        <li class="menu__item"><a href="#!" class="menu__link">Signup</a></li>
+                     </ul>
+                  </nav>
 
-               <button class="menu__btn btn-request btn--active" type="button">Request Demo</button>
+                  <button class="menu__btn btn-request btn--active" type="button">Request Demo</button>
+
+                  <a href="#open" class="menu__burger burger-menu">
+                     <div class="burger-menu__link"></div>
+                  </a>   
+
+                  <a href="#close" class="menu__burger burger-close">                     
+                  </a>
               </div>
 
               <section class="header__content content-header">
@@ -155,7 +162,81 @@
             </div>
          </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__row">
+              <section class="footer__content content-footer">
+               <article class="content-footer__caption">
+                  <h2 class="content-footer__title subtitle">Try for free!</h2>
+                  <p class="content-footer__text">Get limited 1 week free try our features!</p>
+               </article>
+               <div class="content-footer__buttons">
+                  <button class="content-footer__btn btn-learn btn--active content-footer__btn--color-pink" type="button">Learn more</button>
+                  <button class="content-footer__btn btn-request btn--active" type="button">Request Demo</button>
+               </div>
+              </section>
+               <section class="footer__menu menu-footer">
+                  <div class="menu-footer__content content-menu">
+                     <div class="content-menu__caption">
+                        <div class="content-menu__logo"><img src="../images/footer/Logo-menu.svg" alt="icon-menu"></div>
+                        <h6 class="content-menu__title">DataWarehouse</h6>
+                     </div>
+                     <div class="content-menu__item">
+                        <div class="content-menu__text">
+                           <p>Warehouse Society, 234</p>
+                           <p> Bahagia Ave Street PRBW 29281</p>
+                        </div>
+                        <div class="content-menu__mail">
+                           <p>info@warehouse.project</p>
+                           <p>1-232-3434 (Main)</p>
+                        </div>
+                     </div>
+                     <div class="content-menu__rights">
+                        <p>© Datawarehouse™, 2020. All rights reserved.</p>
+                        <p>Company Registration Number: 21479524.</p>
+                     </div>
+                  </div>
+
+                  <nav class="menu-footer__nav">
+                     <ul class="menu-footer__items">
+                        <li class="menu-footer__item item-title">About</li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Profile</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Features</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Careers</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">DW News</a></li>
+                     </ul>
+
+                     <ul class="menu-footer__items">
+                        <li class="menu-footer__item item-title">Help</li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Support</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Sign up</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Guide</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Reports</a></li>
+                        <li class="menu-footer__item"><a href="#!" class="menu-footer__link">Q&A</a></li>
+                     </ul>
+
+                    <div class="menu-footer__social social">
+                        <h6 class="social__title">Social Media</h6>
+                        <div class="social__items">
+                           <a href="#!" class="social__link social__link--blue"><img src="../images/footer/facebook.svg" alt="facebook"></a>
+                           <a href="#!" class="social__link social__link--light-azure"><img src="../images/footer/twitter.svg" alt="twitter"></a>
+                           <a href="#!" class="social__link social__link--orange"><img src="../images/footer/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                  </nav>
+               </section>
+            </div>
+         </div>
+      </footer>
    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@ body{
    overflow: hidden;
 
    display: grid;
-   grid-template: minmax(auto, 162px) 2fr minmax(auto, 200px) / 1fr;
+   grid-template: minmax(auto, 162px) 2fr minmax(407px, auto) / 1fr;
    grid-template-areas: 
       "header-area"
       "main-area"
@@ -470,6 +470,7 @@ body{
    justify-items: center;
    align-items: center;
    grid-template: minmax(200px, auto) / 1fr;
+   cursor: pointer;
 }
 
 .clothing__item--left{
@@ -505,4 +506,317 @@ body{
    width: 10px;
    height: 10px;
    background-color: #EDA3B5;
+}
+
+/* section-products */
+.main__products{
+   margin-bottom: 70px;
+}
+
+.products{
+   display: grid;
+   grid-template: 1fr / minmax(auto, 165px) 1fr minmax(auto, 165px);
+   grid-template-areas: 
+      ". products__row ."
+   ;
+}
+
+.products__row{
+   grid-area: products__row;
+}
+
+h2.section-title{
+   font-family: 'Playfair Display', serif;
+   color: #1B2437;
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 140%;
+   margin-bottom: 35px;
+}
+
+.products__columns{
+   display: grid;
+   
+   grid-template-columns: repeat(auto-fit, minmax(auto, 329px));
+   gap: 30px 15px;
+   
+}
+
+.products__item{
+   display: grid;
+   grid-auto-flow: row;
+   grid-template: auto 1fr / 1fr;   
+   border-radius: 16px;
+   position: relative;
+   cursor: pointer;
+}
+
+.products__item::after{
+   content: '';
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   position: absolute;
+   top: 3%;
+   right: 5%;
+   background: rgba(255, 255, 255, 0.604) url(../images/products/bi_balloon-heart.svg) 50% 60% no-repeat;
+}
+
+.products__item:hover{
+   box-shadow: 0 1px 1px 3px #bcbcbc52;
+}
+
+.products__img img{
+   max-width: 100%;
+   border-radius: 16px 16px 0 0;
+}
+
+.products__content{
+   background-color: #fff;
+   padding: 16px 10px 18px 20px;
+   border-radius: 0 0 16px 16px;   
+}
+
+.products__title{
+   font-family: 'Playfair Display', serif;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 167%;
+   margin-bottom: 10px;
+}
+
+.products__content p:nth-child(3){
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   max-width: 295px;
+   line-height: 188%;
+   margin-bottom: 27px;
+}
+
+.products__order{
+   display: grid;
+   grid-template: 1fr / 1fr 1fr;
+   align-items: center;
+}
+
+.products__price{
+   font-family: 'Playfair Display', serif;
+   font-size: 34px;
+   font-weight: 700;
+   line-height: 88%;
+}
+
+.products__btn{
+   color: #fff;
+   font-family: 'Mulish', sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 167%;
+   text-align: center;
+   background-color: #1B2437;
+   border-radius: 15px;
+   padding: 15px 30px;
+   transition: all 0.1s linear 0s;
+}
+
+.products__btn:hover{
+   background-color: #182d5a;
+   transition: all 0.2s linear 0s;
+}
+
+.products__btn--pink{
+   background-color: #EDA3B5;
+
+}
+.products__btn--pink:hover{
+   background-color: #ffb5c8;
+   transition: all 0.2s linear 0s;
+}
+
+
+/* section-contacts */
+.contacts{
+   display: grid;
+   grid-template: 0.2fr 2fr / minmax(auto, 165px) 1fr minmax(auto, 165px);
+   grid-template-areas: 
+      ". products__title ."
+      ". contacts__row ."
+   ;
+   padding-bottom: 70px;
+}
+.products__title{
+   grid-area: products__title;
+}
+
+.contacts__row{
+   grid-area: contacts__row;
+
+   display: grid;
+   justify-items: center;
+   gap: 20px 0;
+   grid-template: 3fr 0.9fr / repeat(3, 1fr);
+   grid-template-areas: 
+      "contacts__map contacts__map contacts__map"
+      "contacts__phone contacts__address contacts__mail"
+   ;
+   
+   background-color: #fff;
+   padding: 12px 12px 0 12px;
+   border-radius: 15px;
+}
+
+.contacts__map{
+   grid-area: contacts__map;
+   position: relative;
+}
+.map-pin{
+   position: absolute;
+   top: 50%;
+   left: 39.6%;
+}
+.contacts__map img{
+   max-width: 100%;
+}
+.contacts__phone{
+   grid-area: contacts__phone;
+}
+.contacts__address{
+   grid-area: contacts__address;
+}
+.contacts__mail{
+   grid-area: contacts__mail;
+}
+
+.contacts__link{
+   display: grid;
+   justify-items: center;   
+}
+
+.contacts__text{
+   color: #000;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 167%;
+}
+
+
+/* footer */
+.footer{
+   display: grid;
+   grid-template: minmax(333px, auto) minmax(74px, auto) / 1fr;
+   grid-template-areas: 
+      "nav-footer"
+      "reserved-footer"
+   ;
+   padding-bottom: 50px;
+}
+
+.nav-footer{
+   grid-area: nav-footer;
+   background-color: #fff;
+}
+
+.nav-footer__row{
+   display: grid;   
+   justify-content: space-between;
+   grid-template: 1fr / minmax(auto, 165px) repeat(4, 1fr) minmax(auto, 165px);
+   grid-template-areas: 
+      ". nav-footer__lady nav-footer__hot-links nav-footer__more-info nav-footer__customer-care ."
+   ;
+   padding: 32px 0 50px 0;
+}
+
+.nav-footer__lady{
+   grid-area: nav-footer__lady;   
+}
+.nav-footer__hot-links{
+   grid-area: nav-footer__hot-links;
+
+   display: grid;
+   align-self: flex-start;
+   justify-self: center;
+   gap: 22px 0;
+}
+.nav-footer__more-info{
+   grid-area: nav-footer__more-info;
+
+   display: grid;
+   justify-self: end;
+   align-self: flex-start;
+   gap: 22px 0;
+}
+.nav-footer__customer-care{
+   grid-area: nav-footer__customer-care;
+
+   display: grid;
+   justify-self: end;
+   align-self: flex-start;
+   gap: 22px 0;
+}
+
+.nav-footer__logo{
+   display: inline-block;
+   margin-bottom: 24px;
+}
+
+.nav-footer__text{
+   color: #5C5C5C;
+   font-family: 'Playfair Display', serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 188%;
+}
+
+.nav-footer__title{
+   color: #000;
+   font-family: 'Playfair Display', serif;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 167%;
+}
+
+.nav-footer__link{
+   color: #8E8E93;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 188%;
+}
+.nav-footer__link:hover{
+   color: #606060;
+   text-decoration: underline;
+}
+
+
+.reserved-footer{
+   grid-area: reserved-footer;   
+   align-self: center;
+   padding: 35px 0;   
+   background-color: #E5E5EA;
+}
+.reserved-footer__row{
+   display: grid;   
+   align-items: center;
+   grid-template: 1fr / minmax(auto, 165px) 1fr 2fr 1fr minmax(auto, 165px);
+   grid-template-areas: 
+      ". reserved-footer__text . reserved-footer__social ."
+   ;
+   
+}
+.reserved-footer__text{
+   grid-area: reserved-footer__text;
+}
+.reserved-footer__social{
+   grid-area: reserved-footer__social;
+   display: grid;
+   grid-auto-flow: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.reserved-footer__text p{
+   color: #8E8E93;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 250%;
 }

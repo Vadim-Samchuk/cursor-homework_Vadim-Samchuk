@@ -171,6 +171,10 @@
 }
 .pendulum__item6{
    background: linear-gradient(90deg, rgba(46,169,238,1) 11%, rgba(46,162,255,1) 97%);
+   animation: circles 0.5s linear 1 2s;
+}
+.pendulum__item7{
+   background: linear-gradient(90deg, rgba(46,169,238,1) 11%, rgba(46,162,255,1) 97%);
    animation: circle-right 1s linear 1 2s;
 }
 

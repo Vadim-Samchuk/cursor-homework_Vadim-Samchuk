@@ -252,7 +252,7 @@ body{
 
    display: grid;
    gap: 20px;
-   grid-template: minmax(auto, 200px) minmax(auto, 180px) / minmax(225px, 380px) repeat(2, minmax(auto, 300px));
+   grid-template: minmax(auto, 200px) minmax(auto, 180px) / minmax(225px, 380px) repeat(2, minmax(300px, 0.5fr));
    grid-template-areas: 
       "popular collection dress"
       "popular jackets jackets"

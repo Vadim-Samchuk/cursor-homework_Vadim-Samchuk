@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Homework#11</title>
+   <link href="../css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+   <div class="wrapper pb-md-5">
+      <header class="border-bottom border-secondary border-opacity-25 bg-white">
+         <div class="container-lg">
+            <nav class="row align-items-center justify-content-between py-3">
+               <div class="col-4">
+                  <a class="d-inline-block" href="#!">
+                     <img class="img-fluid" src="../images/intagram.svg" alt="instagram">
+                  </a>
+               </div>
+               <div class="nav-item col-sm-4 d-flex justify-content-center">
+                  <input class="user-search px-lg-5 py-1 border rounded border-secondary border-opacity-25" placeholder="Search" type="search" name="usersearch">
+               </div>
+               <div class="nav-item col-sm-4 h-auto">
+                  <div class="d-flex justify-content-end align-items-center">
+                     <a class="me-3" href="#!"><img src="../images/01.svg" alt="home"></a>
+                     <a class="me-3 position-relative" href="#!">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-5 bg-danger">5</span>
+                        <img src="../images/02.svg" alt="message">
+                     </a>
+                     <a class="me-3" href="#!"><img src="../images/03.svg" alt="new post"></a>
+                     <a class="me-3" href="#!"><img src="../images/04.svg" alt="like"></a>
+                     <a href="#!"><img src="../images/05.svg" alt="user-profile"></a>
+                  </div>
+               </div>
+               <div class="col-2 burger-menu">
+                  <a href="#!" class="burger__items">
+                     <span class="burger-menu__item"></span>
+                  </a>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <main class="main">
+         <section class="about-user">
+            <div class="container-lg mb-4">
+               <div class="row">
+                  <div class="col-4 pt-4 user-photo align-self-start">
+                    <div class="user-photo__item">
+                        <img class="img-fluid rounded-circle" src="../images/img.png" alt="photo-user">
+                    </div>
+                  </div>
+
+                  <div class="col-8 about-user pt-4">                    
+                     <div class="row align-items-center mb-3">
+                        <div class="user-name mb-sm-2">
+                           <h1 class="h1">name</h1>
+                        </div>
+                        <div class="user-btn">
+                           <button class="btn btn-primary px-5 py-1 me-2">Follow</button>
+                           <a class="btn btn-primary btn-accordion" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              <span class="item-btn"></span>
+                           </a>
+                        </div>
+                        <div class="btn-modal">
+                           <a class="circles" href="#!">
+                              <span class="circle__item"></span>
+                              <span class="circle__item"></span>
+                              <span class="circle__item"></span>
+                           </a>
+                        </div>
+                     </div>  
+                     <div class="row mb-lg-4 align-items-center follows">
+                        <div class="posts">
+                           <span class="fw-bold">79</span> posts
+                        </div>
+                        <a href="#!" class="followers text-black follows__item">
+                           <span class="fw-bold">379</span> followers
+                        </a>
+                        <a href="#!" class="following text-black follows__item">
+                           <span class="fw-bold">179</span> following
+                        </a>
+                     </div>  
+                     <div class="row d-none d-lg-flex">
+                        <h4 class="h4">Name</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <a href="#!">bit.ly/35Ce3mX</a>
+                     </div>                   
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="story">
+            <div class="container d-md-flex d-lg-none mb-4">
+               <div class="row">
+                  <h4 class="h4 mb-1">Name</h4>
+                  <p class="mb-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                  <a href="#!">bit.ly/35Ce3mX</a>
+               </div> 
+            </div>            
+            <div  id="collapseExample" class="container-lg mb-4 collapse">
+               <div class="recommendations border border-secondary border-opacity-50 rounded-2 p-4">
+                  <div class="recommendations__caption d-flex justify-content-between mb-3">
+                     <h4 class="h4 text-secondary recommendations__heading">Recommendations</h4>
+                     <a href="#!">View all</a>
+                  </div>
+                  <div class="row recommendations__row position-relative">
+                     <div class="recommendations__items">
+                        <div class="recommendations__item border border-secondary border-opacity-50 rounded-2 p-2 d-flex flex-column align-items-center">
+                           <div class="recommendations__logo">
+                              <img class="img-fluid rounded-circle" src="../images/img.png" alt="photo-user">
+                           </div>
+                           <h5 class="h5 recommendations__title">theicon.ua</h5>
+                           <p class="recommendations__text">Мультибрендовий концепт-стор.</p>
+                           <button class="btn btn-primary">Follow</button>
+                        </div>
+                     </div>
+                     <div class="recommendations__items">
+                        <div class="recommendations__item border border-secondary border-opacity-50 rounded-2 p-2 d-flex flex-column align-items-center">
+                           <div class="recommendations__logo">
+                              <img class="img-fluid rounded-circle" src="../images/img.png" alt="photo-user">
+                           </div>
+                           <h5 class="h5 recommendations__title">theicon.ua</h5>
+                           <p class="recommendations__text">Мультибрендовий концепт-стор.</p>
+                           <button class="btn btn-primary">Follow</button>
+                        </div>
+                     </div>
+                     <div class="recommendations__items">
+                        <div class="recommendations__item border border-secondary border-opacity-50 rounded-2 p-2 d-flex flex-column align-items-center">
+                           <div class="recommendations__logo">
+                              <img class="img-fluid rounded-circle" src="../images/img.png" alt="photo-user">
+                           </div>
+                           <h5 class="h5 recommendations__title">theicon.ua</h5>
+                           <p class="recommendations__text">Мультибрендовий концепт-стор.</p>
+                           <button class="btn btn-primary">Follow</button>
+                        </div>
+                     </div>
+                     <div class="recommendations__items">
+                        <div class="recommendations__item border border-secondary border-opacity-50 rounded-2 p-2 d-flex flex-column align-items-center">
+                           <div class="recommendations__logo">
+                              <img class="img-fluid rounded-circle" src="../images/img.png" alt="photo-user">
+                           </div>
+                           <h5 class="h5 recommendations__title">theicon.ua</h5>
+                           <p class="recommendations__text">Мультибрендовий концепт-стор.</p>
+                           <button class="btn btn-primary">Follow</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container-lg">
+               <div class="row story__row mb-5">
+                  <div class="story__item d-flex flex-column align-items-center">
+                     <a href="#!" class="story__logo border border-1 border-secondary border-opacity-50 rounded-circle">
+                        <img class="img-fluid rounded-circle" src="../images/img.png" alt="story-logo">
+                     </a>
+                     <p class="story__text fw-bold">Name</p>
+                  </div>
+                  <div class="story__item d-flex flex-column align-items-center">
+                     <a href="#!" class="story__logo border border-1 border-secondary border-opacity-50 rounded-circle">
+                        <img class="img-fluid rounded-circle" src="../images/img.png" alt="story-logo">
+                     </a>
+                     <p class="story__text fw-bold">Name</p>
+                  </div>
+                  <div class="story__item d-flex flex-column align-items-center">
+                     <a href="#!" class="story__logo border border-1 border-secondary border-opacity-50 rounded-circle">
+                        <img class="img-fluid rounded-circle" src="../images/img.png" alt="story-logo">
+                     </a>
+                     <p class="story__text fw-bold">Name</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="tagged" class="album">
+            <div id="#posts" class="album__container">
+               <div class="container-lg border-top border-1 border-secondary border-opacity-25">
+                  <div class="row justify-content-center py-4">
+                     <div class="col-md-2 col-6  text-uppercase text-center">
+                        <a class="position-relative album__link" href="#posts">
+                           <svg class="me-1 mb-1" width="15" height="15" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="icon-left" fill-rule="evenodd" clip-rule="evenodd" d="M10.6333 0H0.366667C0.171111 0 0 0.171111 0 0.366667V10.6333C0 10.8289 0.171111 11 0.366667 11H10.6333C10.8289 11 11 10.8289 11 10.6333V0.366667C11 0.171111 10.8289 0 10.6333 0ZM0.733333 0.733333H3.42222V3.42222H0.733333V0.733333ZM0.733333 4.15556H3.42222V6.84444H0.733333V4.15556ZM3.42222 10.2667H0.733333V7.57778H3.42222V10.2667ZM6.84444 10.2667H4.15556V7.57778H6.84444V10.2667ZM6.84444 6.84444H4.15556V4.15556H6.84444V6.84444ZM6.84444 3.42222H4.15556V0.733333H6.84444V3.42222ZM10.2667 10.2667H7.57778V7.57778H10.2667V10.2667ZM10.2667 6.84444H7.57778V4.15556H10.2667V6.84444ZM10.2667 3.42222H7.57778V0.733333H10.2667V3.42222Z" fill="#262626"/>
+                           </svg>       
+                           <span class="text-posts">posts</span>              
+                        </a>
+                     </div>
+                     <div class="col-md-2 col-6 text-uppercase text-center">
+                        <a class="position-relative tagged__link" href="#tagged">
+                           <svg class="me-1 mb-1" width="15" height="15" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="icon-right" d="M9.59575 1.18066H6.99787C6.88085 1.18066 6.76383 1.1339 6.67021 1.04038L5.73404 0.105207C5.59362 -0.0350691 5.38298 -0.0350691 5.24255 0.105207L4.30638 1.04038C4.21277 1.1339 4.09574 1.18066 3.97872 1.18066H1.40426C0.631915 1.18066 0 1.8119 0 2.58342V9.59724C0 10.3688 0.631915 11 1.40426 11H9.59575C10.3681 11 11 10.3688 11 9.59724V2.58342C11 1.8119 10.3681 1.18066 9.59575 1.18066ZM2.71489 10.2986C2.57447 10.2986 2.45745 10.1583 2.48085 10.0181C2.64468 9.26993 3.3 8.70882 4.07234 8.70882H6.88085C7.6766 8.70882 8.33191 9.26993 8.47234 10.0181C8.49574 10.1583 8.37872 10.2986 8.2383 10.2986H2.71489ZM10.2979 9.59724C10.2979 9.99469 9.99362 10.2986 9.59575 10.2986H9.45532C9.3383 10.2986 9.24468 10.2051 9.22128 10.0882C9.08085 8.91923 8.09787 8.00744 6.90426 8.00744H4.09574C2.90213 8.00744 1.89574 8.91923 1.77872 10.0882C1.75532 10.2051 1.6617 10.2986 1.54468 10.2986H1.40426C1.00638 10.2986 0.702128 9.99469 0.702128 9.59724V2.58342C0.702128 2.18597 1.00638 1.88204 1.40426 1.88204H4.00213C4.30638 1.88204 4.61064 1.76514 4.82128 1.53135L5.5 0.853347L6.17872 1.53135C6.38936 1.74176 6.69362 1.88204 6.99787 1.88204H9.59575C9.99362 1.88204 10.2979 2.18597 10.2979 2.58342V9.59724ZM5.5 2.81722C4.25957 2.81722 3.25319 3.82253 3.25319 5.06164C3.25319 6.30074 4.25957 7.30606 5.5 7.30606C6.74043 7.30606 7.74681 6.30074 7.74681 5.06164C7.74681 3.82253 6.74043 2.81722 5.5 2.81722ZM5.5 6.5813C4.65745 6.5813 3.95532 5.90329 3.95532 5.03826C3.95532 4.1966 4.63404 3.49522 5.5 3.49522C6.36596 3.49522 7.04468 4.17322 7.04468 5.03826C7.04468 5.87991 6.34255 6.5813 5.5 6.5813Z" fill="#8E8E8E"/>
+                           </svg> 
+                           <span class="text-tagged">tagged</span>                        
+                        </a>
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="container-lg album__posts">
+                  <div class="row justify-content-center gap-1 gap-sm-2 gap-md-3 column__row">
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>
+                     <div class="column__item p-0">
+                        <img class="img-fluid" src="../images/img.png" alt="user-photo">
+                     </div>                  
+                  </div>
+               </div>
+   
+               <div class="album__tagged tagged">
+                  <div class="container-lg">
+                     <div class="row justify-content-center align-items-center tagged__row">
+                        <div class="col-lg-8 text-center">
+                           <div class="tagged__logo"></div>
+                           <h2 class="h2">Pictures with you</h2>
+                           <p class="tagged__text">When you are tagged in photos, they will appear here.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>            
+         </section>
+      </main>
+      <footer class="footer py-3 position-fixed left-0 bottom-0 w-100 bg-white">
+        <div class="container-fluid">
+            <nav class="row justify-content-center align-items-end">
+               <div class="col-2 text-center">
+                  <a class="d-inline-block" href="#!"><img src="../images/01.svg" alt="home"></a>
+               </div>
+               <div class="col-2 text-center">
+                  <a class="d-inline-block position-relative" href="#!">
+                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-5 bg-danger">5</span>
+                     <img src="../images/02.svg" alt="message">
+                  </a>
+               </div>
+               <div class="col-2 text-center">
+                  <a class="d-inline-block" href="#!"><img src="../images/03.svg" alt="new post"></a>
+               </div>
+               <div class="col-2 text-center">
+                  <a class="d-inline-block" href="#!"><img src="../images/04.svg" alt="like"></a>
+               </div>
+               <div class="col-2 text-center">
+                  <a class="d-inline-block" href="#!"><img src="../images/05.svg" alt="user-profile"></a>
+               </div>
+            </nav>
+        </div>
+      </footer>
+   </div>
+
+   <script src="../js/bootstrap.bundle.min.js"></script>   
+</body>
+
+</html>

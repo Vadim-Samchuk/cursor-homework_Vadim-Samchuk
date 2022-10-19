@@ -1,0 +1,362 @@
+a:focus,a:active{outline: none;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+body{
+   background-color: rgba(242, 242, 242, 0.181);
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+}
+
+/* header */
+.user-search::placeholder{
+   font-size: 14px;   
+   text-align: center;
+   background: url(../images/search.svg) 20% 50%/15px no-repeat;
+}
+
+/* burger-menu */
+.burger__items{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 40px;
+   height: 30px;
+   margin-left: auto;
+   position: relative;
+}
+.burger__items::before,
+.burger__items::after{
+   content: '';
+   width: 100%;
+   height: 3px;
+   background-color: #424242;
+   position: absolute;
+}
+.burger__items::before{
+   top: 0;
+   left: 0;
+}
+.burger__items::after{
+   bottom: 0;
+   left: 0;
+}
+.burger-menu__item{
+   display: inline-block;
+   width: 100%;
+   height: 3px;
+   border-radius: 5px;
+   background-color: #424242;
+}
+
+/* media header */
+@media (min-width: 767.98px){
+   .burger-menu{
+      display: none!important;
+   }
+}
+
+@media (max-width: 767.98px){
+   .nav-item{
+      display: none!important;
+   }   
+}
+
+/* main */
+.main{
+   flex: 1 1 auto; 
+   overflow: hidden;   
+}
+
+/* about-user */
+.user-photo__item{
+   width: 100%;
+   max-width: 154px;
+   height: 154px;
+   margin: 0 auto;
+}
+
+.user-name{
+   flex: 0 1 18%;
+}
+
+.user-btn{
+   flex: 0 1 28%;
+   display: flex;
+   align-items: stretch;
+}
+
+.btn-accordion{
+   width: 40px;
+   height: 34px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.item-btn{
+   width: 0px;
+   height: 0px;
+   border-left: 4px solid transparent;
+   border-right: 4px solid transparent;
+   border-top: 7px solid #fff;
+}
+
+.btn-modal{
+   flex: 0 1 10%;
+}
+
+.circles{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 34px;
+   column-gap: 5px;
+}
+
+.circle__item{
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background-color: #424242;
+}
+
+.posts{
+   flex: 0 1 20%;
+   font-size: 17px;
+}
+
+.follows__item{
+   flex: 0 1 25%;
+   font-size: 17px;   
+}
+
+.h4,p{
+   margin-bottom: 0;
+}
+p{
+   max-width: 620px!important;
+   word-wrap: break-word;
+   
+}
+
+/* media about-user */
+@media (max-width: 767.98px){
+   .posts{
+      flex: 0 1 33.333%;
+      font-size: 17px;
+      padding-right: 0!important;
+   }
+   .follows__item{
+      flex: 0 1 33.333%;
+      font-size: 17px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 0!important;
+   }
+}
+
+@media (max-width: 575.98px){
+   .user-name{
+      flex: 0 1 30%;
+      order: 1;
+      margin-bottom: 10px;
+   }
+   .btn-modal{
+      flex: 0 1 20%;
+      order: 2;
+      margin-bottom: 10px;
+   }
+   .user-btn{
+      flex: 0 1 100%;
+      order: 3;
+   }
+   
+}
+
+/* story */
+.recommendations__row{
+   flex-wrap: nowrap;
+   gap: 10px 0;
+   overflow: hidden;   
+}
+.recommendations__row::before{
+   content: '';
+   width: 40px;
+   height: 40px;
+   background: rgba(158, 158, 158, 0.569) url(../images/skip-track.png) 50% no-repeat;
+   position: absolute;
+   border-radius: 50%; 
+   border: 1px solid #000;  
+   top: 30%;
+   right: 0;
+}
+.recommendations__heading{
+   font-size: 16px;
+}
+.recommendations__items{
+   flex: 0 1 25%;
+}
+.recommendations__logo{
+   width: 70px;
+   height: 70px;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+.recommendations__title{
+   font-size: 14px;
+}
+.recommendations__text{
+   font-size: 14px;
+   line-height: 100%!important;
+   margin-bottom: 10px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   width: 100px;
+}
+
+.story__row{
+   padding-left: 100px;   
+}
+.story__item{
+   flex: 0 1 10%;
+}
+
+.story__logo{
+   width: 80px;
+   height: 80px;
+   padding: 2px;
+}
+
+/* media story */
+@media (max-width: 991.98px){
+   .story__row{
+      padding-left: 0;
+   }
+}
+
+
+/* album */
+.album__link::before{
+   content: '';
+   width: 100%;
+   height: 1px;
+   background-color: #000;
+   position: absolute;
+   top: -26px;
+   left: 0;   
+}
+
+.tagged__link::after{
+   display: none;
+   content: '';
+   width: 100%;
+   height: 1px;
+   background-color: #000;
+   position: absolute;
+   top: -26px;
+   left: 0;  
+}
+
+.icon-left,
+.icon-right{  
+   fill: #8F8F8F;
+}
+
+.text-posts{
+   color: #000;
+   font-weight: 600;
+}
+
+.icon-left{
+   fill: #000;
+}
+
+.text-tagged{
+   color: #8F8F8F;
+   font-weight: 600;
+}
+
+.column__item{
+   flex: 0 1 26%;
+}
+
+.tagged__logo{
+   width: 62px;
+   height: 62px;
+   background: url(../images/sprite.png) 69.6% 79.3% no-repeat;
+   margin: 0 auto;
+}
+
+.tagged__text{
+   max-width: 100%!important;
+}
+
+@media (max-width: 575.98px){
+   .column__item{
+      flex: 0 1 31%;
+   }
+}
+
+.tagged__row{
+   min-height: 300px;
+}
+
+.album__tagged{
+   display: none;
+}
+
+.album:target .album__posts{
+   display: none;
+}
+
+.album:target .album__link::before{
+   display: none;
+}
+
+.album:target .album__tagged{
+   display: block;
+}
+
+.album:target .text-tagged{
+   color: #000;
+}
+
+.album:target .icon-right{  
+   fill: #000;
+}
+
+.album:target .tagged__link::after{
+   display: block;
+}
+
+.album:target .text-posts{
+   color: #8F8F8F;
+}
+
+.album:target .icon-left{
+   fill: #8F8F8F;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+/* media footer */
+@media (min-width: 767.98px){
+   .footer{
+      display: none;
+   }
+}

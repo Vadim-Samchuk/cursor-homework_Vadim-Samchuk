@@ -1,0 +1,49 @@
+%title{
+   color: $color-black;
+   font: {
+      size: $fz-xl;
+      weight: 600;
+   }
+   line-height: 135%;
+}
+
+// btn
+%btn-xl{
+   width: 140px;   
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 11px 20px;
+   border-radius: 5px;
+}
+
+%btn-lg{   
+   width: 140px;
+   padding: 14px 36px;
+   border-radius: 5px;
+}
+
+%btn-blue{
+   color: $color-white;
+   background-color: $color-blue;
+}
+
+%btn-gray{
+   color: $color-gray;
+   background-color: $color-bg;
+}
+
+%btn-black{
+   color: $color-black;
+   border: 1px solid $color-bor;
+   background-color: $color-white;
+}
+
+%btn-primary{
+   color: $color-blue;
+   border: 1px solid $color-blue;
+   background-color: $color-white;
+}
+
+
+

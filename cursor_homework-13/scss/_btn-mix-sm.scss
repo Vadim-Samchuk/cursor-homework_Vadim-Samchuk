@@ -1,0 +1,98 @@
+.btn-mix-sm{
+   display: flex;
+   gap: 0 65px;
+
+   &__row{
+      display: flex;
+      flex-direction: column;
+
+      > div:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+
+   &__tab{
+      padding: 9px 24px;
+      border-radius: 0 5px 5px 0;
+      @extend %btn-black;
+   }
+
+   &__tab--blue{
+      color: $color-white;
+      background-color: $color-blue;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid $color-blue;
+      margin-right: -4px;
+   }
+   &__btn-search{
+      padding: 6px 12px;
+      background-color: $color-white;
+      border: 1px solid $color-bor;
+      border-radius: 0 5px 5px 0;
+   }
+   &__btn-search--blue{
+      background-color: $color-blue;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid $color-blue;
+      margin-right: -3px;
+   }
+   &__btn-search--black{
+      border: {
+         top: 1px solid $color-bor;
+         bottom: 1px solid $color-bor;
+         left: 0;
+         right: 0;
+      };
+      margin-right: -3px;
+      border-radius: 0;
+   }
+   &__img{
+      fill: $color-black;
+   }
+   &__item-btn{
+      color: $color-black;
+      background-color: $color-white;
+      border: 1px solid $color-bor;
+      padding: 9px 24px;
+      margin-right: -4px;
+   }
+   &__item-btn--blue{
+      color: $color-white;
+      background-color: $color-blue;
+      border: 1px solid $color-blue;
+      border-radius: 5px 0 0 5px;
+      margin-right: -4px;
+   }
+   &__item-btn--left{
+      border-radius: 0 5px 5px 0;
+      margin: 0;
+      border-left: 0;
+   }
+}
+
+.search-btn{
+   display: flex;
+   align-items: flex-start;
+   &__orange-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      padding: 8px;
+      border-radius: 50%;
+      margin-right: 20px;
+      background-color: $color-ogange;
+   }
+
+   &__green-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      border-radius: 50%;
+      background-color: $color-green;
+   }
+}

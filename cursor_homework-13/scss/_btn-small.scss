@@ -1,0 +1,89 @@
+.download-sm{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px 55px;
+   max-width: 685px;
+
+   &__btn{        
+      width: 130px;
+      @extend %btn-lg; 
+      padding: 14px 25px;
+      position: relative; 
+      transition: all 0.2s linear 0s;
+      &:active{
+         top: 2px;
+      }   
+   }
+   &__btn--blue{      
+      @extend %btn-blue;
+      &:hover{
+         background-color: #0188e2;
+         transition: all 0.2s linear 0s;
+      }
+   }
+   &__btn--gray{
+      @extend %btn-gray;     
+      &:hover{
+         color: $color-black;
+         background-color: $color-white;
+         box-shadow: 0 0 1px 1px $color-black;
+         transition: all 0.2s linear 0s;      
+      }
+      
+   }
+   &__btn--black{
+      @extend %btn-black;
+      transition: all 0.2s linear 0s;
+      &:hover{
+         color: $color-gray;
+         background-color: $color-bg;        
+      }
+   }
+   &__btn--primary{
+      @extend %btn-primary;      
+      &:hover{
+         color: $color-white;
+         background-color: $color-blue;         
+         transition: all 0.2s linear 0s;
+      }
+   }
+   &__btn--orange{
+      color: $color-white;
+      background-color: $color-ogange;
+      &:hover{
+         background-color: #ff684d;
+      }
+   }
+
+   &__btn-xl{
+      width: 130px;
+      @extend %btn-xl;
+      transition: all 0.2s linear 0s; 
+      position: relative;
+      &:active{
+         top: 2px;
+      }      
+   }
+
+   &__img--gray{
+      stroke: $color-gray;        
+   }
+   &__btn--gray:hover &__img--gray{
+      stroke: $color-black;
+      transition: all 0.2s linear 0s; 
+   }  
+   &__img--black{
+      stroke: $color-black;      
+   }
+   &__btn--black:hover &__img--black{
+      stroke: $color-gray;
+      transition: all 0.2s linear 0s;
+   }
+   &__img--primary{
+      stroke: $color-blue;     
+   }
+   &__btn--primary:hover &__img--primary{
+      stroke: $color-white;
+      transition: all 0.2s linear 0s;
+   }
+}

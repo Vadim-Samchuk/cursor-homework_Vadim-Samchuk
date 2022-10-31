@@ -1,0 +1,121 @@
+.download{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px 20px;
+   max-width: 620px;
+
+   // btn-md
+   &__md{
+      @extend %btn-lg;    
+      position: relative;
+      &:active{
+         top: 2px;
+      }  
+   }   
+
+   &__md--blue{
+      @extend %btn-blue;  
+      transition: background-color 0.2s linear 0s;    
+      &:hover{
+         background-color: #0079c9;
+         transition: background-color 0.2s linear 0s;
+      }
+   }
+
+   &__md--gray{
+      @extend %btn-gray;   
+      transition: all 0.2s linear 0s;   
+      &:hover{
+         color: $color-black;
+         background-color: #fff;
+         box-shadow: 0 0 1px 1px $color-black;
+         transition: all 0.2s linear 0s;
+      }
+   }
+
+   &__md--black{
+      @extend %btn-black;
+      transition: all 0.2s linear 0s;
+      &:hover{
+         color: $color-gray;
+         background-color: $color-bg;
+         transition: all 0.2s linear 0s;
+      }
+   }
+
+   &__md--primary{
+      @extend %btn-primary;
+      transition: all 0.2s linear 0s;
+      &:hover{
+         color: $color-white;
+         background-color: $color-blue;
+         transition: all 0.2s linear 0s;
+      }
+   }
+
+   // btn-xl
+   &__xl{
+      @extend %btn-xl;
+      position: relative;
+      &:active{
+         top: 2px;
+      }
+   }
+   &__xl--blue{
+      @extend %btn-blue; 
+      transition: background-color 0.2s linear 0s;    
+      &:hover{
+         background-color: #0079c9;
+         transition: background-color 0.2s linear 0s;
+      }     
+   }
+   &__xl--gray{
+      @extend %btn-gray;
+      transition: all 0.2s linear 0s;   
+      &:hover{
+         color: $color-black;
+         background-color: #fff;
+         box-shadow: 0 0 1px 1px $color-black;
+         transition: all 0.2s linear 0s;
+      }
+      .img-gray{
+         stroke: $color-gray;        
+      }
+      &:hover .img-gray{
+         stroke: $color-black;
+         transition: all 0.2s linear 0s;
+      }
+   }
+   &__xl--black{
+      @extend %btn-black;
+      transition: all 0.2s linear 0s;
+      &:hover{
+         color: $color-gray;
+         background-color: $color-bg;
+         transition: all 0.2s linear 0s;
+      }
+      .img-black{
+         stroke: $color-black;        
+      }
+      &:hover .img-black{
+         stroke: $color-gray;
+         transition: all 0.2s linear 0s;
+      }
+   }
+   &__xl--primary{
+      @extend %btn-primary;
+      transition: all 0.2s linear 0s;
+      &:hover{
+         color: $color-white;
+         background-color: $color-blue;
+         transition: all 0.2s linear 0s;
+      }
+      .img-primary{
+         stroke: $color-blue;        
+      }
+      &:hover .img-primary{
+         stroke: $color-white;
+         transition: all 0.2s linear 0s;
+      }
+   }
+}

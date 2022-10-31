@@ -1,0 +1,46 @@
+body{
+   color: $color-black;
+   font: {
+      family: 'Inter', sans-serif;
+      size: $fz-md;
+      weight: 500;
+   }
+   line-height: 120%;
+   background-color: $color-bg;      
+}
+
+.container{
+   max-width: 1300px;
+   margin: 0 auto;
+   background-color: $color-white;
+   padding: 45px 55px 80px 55px;   
+}
+
+.buttons-big{
+   margin-bottom: 70px;
+
+   &__title{     
+      @extend %title;
+      margin-bottom: 25px;     
+   }       
+   
+   &__row{
+      display: flex; 
+      align-items: center; 
+      gap: 0 130px;
+   }
+}
+
+.buttons-sm{
+   margin-bottom: 50px;
+   
+   &__title{     
+      @extend %title;
+      margin-bottom: 35px;     
+   }       
+   
+   &__row{
+      display: flex;  
+      gap: 0 145px;          
+   }
+}

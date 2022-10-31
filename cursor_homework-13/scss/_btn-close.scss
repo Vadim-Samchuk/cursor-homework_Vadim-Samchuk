@@ -1,0 +1,34 @@
+.btn-tag{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 14px 0;
+   max-width: 156px;    
+
+   &__close-btn{
+      display: flex;
+      gap: 0 6px;
+      width: 65px;
+      height: 28px;      
+      border-radius: 5px;
+      border: 1px solid $color-bor;
+      padding: 6px 10px;      
+      margin-right: 12px;
+      background-color: $color-white;
+   }
+   &__close-btn--blue{
+      color: $color-white;
+      background-color: $color-blue;
+      border: 0;
+   }
+   &__sm-btn{
+      border-radius: 5px;      
+      padding: 6px 14px;
+      margin-right: 25px;
+      border: 1px solid $color-bor;
+   }
+   &__sm-btn--blue{
+      color: $color-white;
+      background-color: $color-blue;
+      border: 0;
+   }
+}

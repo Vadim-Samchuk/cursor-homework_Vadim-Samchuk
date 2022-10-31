@@ -1,0 +1,67 @@
+.btn-mix{
+   display: flex;
+   align-items: flex-start;   
+   flex-direction: column;  
+   
+   &__inner{
+      margin-bottom: 24px;           
+   }
+   & div:last-child{
+      margin-bottom: 0;
+   } 
+   &__item{
+      background-color: $color-white;
+      padding: 12px 16px;
+   }
+   &__search{
+      @extend %btn-blue;
+      background-color: $color-blue;
+      border: 1px solid $color-blue;
+      border-radius: 5px 0 0 5px;        
+   }
+   &__downl{
+      border: {
+         top: 1px solid $color-gray;
+         bottom: 1px solid $color-gray;
+      }
+      margin: 0 -4px;            
+   }
+   &__archive{
+      border: 1px solid $color-gray;
+      border-radius: 0 5px 5px 0;
+   }
+   &__img--black{
+      stroke: $color-black;         
+   }   
+   
+   &__xl{
+      color: $color-black;
+      padding: 14px 48px;
+      border: 1px solid $color-gray;
+      border-left: 0;
+      border-radius: 0 5px 5px 0;
+      background-color: $color-white;
+   }    
+   &__md{
+      padding: 14px 48px;  
+      border: 1px solid $color-gray;  
+      background-color: $color-white;
+      border-radius: 0 5px 5px 0;  
+   }
+   &__primary{
+      color: $color-white;
+      background-color: $color-blue;
+      border-radius: 5px 0 0 5px;
+      margin-right: -4px;
+      border-color: $color-blue;
+      border-radius: 5px 0 0 5px;
+   }  
+   &__md--white{
+      margin-right: -4px;   
+      border: {
+         left: 0;
+         right: 0;
+      }     
+      border-radius: 0;    
+   }
+}
